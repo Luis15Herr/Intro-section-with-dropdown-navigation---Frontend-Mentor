@@ -1,0 +1,141 @@
+$AlmostWhite: hsl(0, 0%, 98%);
+$MediumGray: hsl(0, 0%, 41%);
+$AlmostBlack: hsl(0, 0%, 8%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  position: relative;
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background-image: url(./design/desktop-design.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.header__container {
+  width: 1355px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  padding: 32px 0;
+}
+nav {
+  margin-left: 60px;
+}
+.nav__item {
+  text-decoration: none;
+  color: $AlmostBlack;
+  font-size: 0.8em;
+  margin-right: 36px;
+  svg {
+    margin-left: 5px;
+  }
+}
+
+.user__btns {
+  margin-left: auto;
+}
+.login__btn {
+  text-decoration: none;
+  color: $AlmostBlack;
+  font-size: 0.8em;
+  margin-right: 10px;
+  display: inline-block;
+  margin-right: 32px;
+}
+.register__btn {
+  text-decoration: none;
+  color: $AlmostBlack;
+  border: 2px solid $AlmostBlack;
+  padding: 14px 20px;
+  border-radius: 15px;
+  position: relative;
+  right: -3px;
+  font-size: 0.8em;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 35px;
+  grid-column-gap: 110px;
+}
+.content__left {
+  padding-top: 103px;
+  display: grid;
+}
+.content__title {
+  font-size: 4.5em;
+  padding-right: 35px;
+  letter-spacing: -1.8px;
+  line-height: 82px;
+}
+.content__txt {
+  margin-top: 45px;
+  padding-right: 100px;
+  line-height: 29px;
+}
+.content__btn {
+  background-color: $AlmostBlack;
+  color: $AlmostWhite;
+  text-decoration: none;
+  height: 55px;
+  border-radius: 15px;
+  width: 163px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+.content__companies {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 40px;
+    position: relative;
+    top: 5px;
+  }
+}
+.content__rigth {
+  width: 100%;
+  img {
+    width: 480px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
