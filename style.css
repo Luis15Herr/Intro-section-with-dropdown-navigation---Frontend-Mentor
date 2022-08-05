@@ -46,6 +46,7 @@ nav {
 
 .nav__item {
   text-decoration: none;
+  display: inline-block;
   color: dimgray;
   font-size: 0.8em;
   margin-right: 36px;
